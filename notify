@@ -15,7 +15,7 @@ spec:
         // Workspace name, https://<workspace>/slack.com
         slackCfg.teamDomain = "IBM-Z"
         // Bot User OAuth Access Token from your Jenkins Bot App
-        slackCfg.token = "xoxb-359950653876-YuXG5jhOWRIfMR08QM7INLgb"
+        slackCfg.token = "slack_token_regression_updates"
   
         /**
          * Send a Slack message.

@@ -11,7 +11,7 @@ spec:
         // Send message as bot user
         slackCfg.botUser = true
         // Slack channel where messages are send to
-        slackCfg.channel = "testslack_euh
+        slackCfg.channel = "testslack_euh"
         // Workspace name, https://<workspace>/slack.com
         slackCfg.teamDomain = "IBM-Z"
         // Bot User OAuth Access Token from your Jenkins Bot App
@@ -27,7 +27,7 @@ spec:
         def send(channelRef, message) {
             def channel = channelRef ?: slackCfg.channel
             return slackSend(teamDomain: slackCfg.teamDomain, token: slackCfg.token, baseUrl: slackCfg.baseUrl,
-                botUser: slackCfg.botUser, channel: channel, message: message)
+                botUser: slackCfg.botUser, channel: "testslack_euh", message:"hi" )
         }
   
         node {
